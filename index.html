@@ -3,109 +3,371 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JP Tools And Machine</title>
+    <meta name="description" content="JP Tools And Machine - MFG. & SUPPLY OF TEXTILE MACHINERY & ACCESSORIES">
+    <meta name="keywords" content="textile machinery, needle loom, rapier loom, industrial machines">
+    <title>JP Tools And Machine - Industrial Textile Machinery Solutions</title>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <img src="logo.png" alt="JP Tools Logo" class="logo">
+<!-- ==================== HEADER & NAVIGATION ==================== -->
+<header class="header">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-section" onclick="scrollToTop()">
+                <div class="logo-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>JP TOOLS</h1>
+                    <p>Industrial Solutions</p>
+                </div>
+            </div>
 
-    <h1>JP TOOLS AND MACHINE</h1>
-    <p>MFG. & SUPPLY OF TEXTILE MACHINERY & ACCESSORIES</p>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
 
-    <div class="contact">
-        <p>📞 7016522044</p>
-        <p>📧 info@jptools.co.in</p>
-    </div>
+            <div class="contact-header">
+                <div class="phone">
+                    <i class="fas fa-phone"></i> 7016522044
+                </div>
+                <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
 </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
-</nav>
-
+<!-- ==================== HERO SECTION ==================== -->
 <section class="hero">
-    <h2>Industrial Textile Machinery Solutions</h2>
-    <p>Quality • Reliability • Performance</p>
-</section>
-
-<section id="about">
-    <h2>About Us</h2>
-    <p>
-        JP Tools And Machine is a trusted supplier of textile machinery and accessories.
-        We provide high-quality industrial machines with reliable performance and modern technology.
-    </p>
-</section>
-
-<section id="products">
-    <h2>Our Products</h2>
-
-    <div class="product">
-        <img src="needleloom.jpg" alt="Needle Loom">
-        <h3>Twill Tapes Needle Loom Machine</h3>
-        <p>Automatic industrial needle loom machine.</p>
-
-        <ul>
-            <li>Capacity: 6000 to 8000 mtr</li>
-            <li>Power: 1.5 HP 3 Phase</li>
-            <li>Brand: SUSMATEX</li>
-            <li>Made in India</li>
-        </ul>
-    </div>
-
-    <div class="product">
-        <img src="rapierloom.jpg" alt="Rapier Loom">
-        <h3>Rapier Loom Machine</h3>
-
-        <ul>
-            <li>Speed: 180-200 r/min</li>
-            <li>Material: Metal</li>
-            <li>Usage: Terry towel production</li>
-            <li>Electric Power</li>
-        </ul>
-    </div>
-
-    <div class="product">
-        <img src="automaticloom.jpg" alt="Automatic Loom">
-        <h3>Automatic Needle Loom</h3>
-
-        <ul>
-            <li>Steel Body</li>
-            <li>High Efficiency</li>
-            <li>Durable Design</li>
-            <li>Reliable Performance</li>
-        </ul>
-    </div>
-
-</section>
-
-<section id="contact">
-    <h2>Contact Us</h2>
-
-    <div class="address">
-        <h3>Main Branch (Ahmedabad)</h3>
-        <p>
-            Plot No. 27, Mahadev Estate,<br>
-            Near GIDC Naroda, Naroda,<br>
-            Ahmedabad - 382330 Gujarat, India.
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h2 class="hero-title">Industrial Textile Machinery Solutions</h2>
+        <p class="hero-subtitle">Quality • Reliability • Performance</p>
+        <p class="hero-description">
+            Trusted supplier of premium textile machinery and accessories with over 25 years of excellence
         </p>
-    </div>
-
-    <div class="address">
-        <h3>Client Office (Bhavnagar)</h3>
-        <p>
-            Shop No. 12, 1st Floor,<br>
-            GIDC, Chita, Kothariya Main Road,<br>
-            Bhavnagar - 364001 Gujarat, India.
-        </p>
+        <button class="cta-button">
+            <a href="#products">Explore Our Products</a>
+        </button>
     </div>
 </section>
 
-<footer>
-    <p>© 2026 JP Tools And Machine. All Rights Reserved.</p>
+<!-- ==================== ABOUT SECTION ==================== -->
+<section id="about" class="about">
+    <div class="container">
+        <div class="section-header">
+            <h2>About JP Tools And Machine</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="about-content">
+            <div class="about-text">
+                <p class="about-intro">
+                    <i class="fas fa-star" style="color: #FF6B35;"></i> Industry Leader Since 2001
+                </p>
+                <p>
+                    JP Tools And Machine is a trusted supplier of premium textile machinery and accessories. 
+                    With over 25 years of experience, we have established ourselves as a leading manufacturer 
+                    and supplier of high-quality industrial machines for the textile industry.
+                </p>
+                <p>
+                    We are committed to providing reliable, efficient, and innovative textile machinery solutions 
+                    that meet the evolving needs of our clients. Our products are manufactured using state-of-the-art 
+                    technology and quality materials to ensure superior performance and durability.
+                </p>
+
+                <div class="about-features">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Premium Quality Manufacturing</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Advanced Technology & Innovation</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Reliable Performance & Support</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Competitive Pricing & Service</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-stats">
+                <div class="stat-card">
+                    <h3><i class="fas fa-award"></i> Experience</h3>
+                    <div class="stat-number">25+</div>
+                    <p>Years in Industry</p>
+                </div>
+                <div class="stat-card">
+                    <h3><i class="fas fa-handshake"></i> Clients</h3>
+                    <div class="stat-number">500+</div>
+                    <p>Satisfied Customers</p>
+                </div>
+                <div class="stat-card">
+                    <h3><i class="fas fa-certificate"></i> Certified</h3>
+                    <div class="stat-number">100%</div>
+                    <p>Quality Assured</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== PRODUCTS SECTION ==================== -->
+<section id="products" class="products">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Premium Products</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">High-performance textile machinery designed for maximum efficiency</p>
+        </div>
+
+        <div class="products-grid">
+            <!-- Product 1: Twill Tapes Needle Loom Machine -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <div class="product-image placeholder-1">
+                        <i class="fas fa-spool"></i>
+                    </div>
+                    <span class="product-badge">Popular</span>
+                </div>
+                <div class="product-details">
+                    <h3>Twill Tapes Needle Loom Machine</h3>
+                    <p class="product-description">
+                        Automatic industrial needle loom machine for high-volume twill tape production with superior precision and efficiency.
+                    </p>
+                    <ul class="product-specs">
+                        <li><strong>Capacity:</strong> 6000-8000 mtr/day</li>
+                        <li><strong>Power:</strong> 1.5 HP 3 Phase</li>
+                        <li><strong>Brand:</strong> SUSMATEX</li>
+                        <li><strong>Origin:</strong> Made in India</li>
+                        <li><strong>Type:</strong> Automatic Needle Loom</li>
+                    </ul>
+                    <button class="product-btn">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2: Rapier Loom Machine -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <div class="product-image placeholder-2">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <span class="product-badge" style="background-color: #0052CC;">Advanced</span>
+                </div>
+                <div class="product-details">
+                    <h3>Rapier Loom Machine</h3>
+                    <p class="product-description">
+                        Professional rapier loom designed for terry towel production with exceptional speed and reliability.
+                    </p>
+                    <ul class="product-specs">
+                        <li><strong>Speed:</strong> 180-200 r/min</li>
+                        <li><strong>Material:</strong> Heavy-duty Metal</li>
+                        <li><strong>Usage:</strong> Terry Towel Production</li>
+                        <li><strong>Power:</strong> Electric 3-Phase</li>
+                        <li><strong>Efficiency:</strong> High Performance</li>
+                    </ul>
+                    <button class="product-btn">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 3: Automatic Needle Loom -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <div class="product-image placeholder-3">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <span class="product-badge" style="background-color: #FF8C42;">Latest</span>
+                </div>
+                <div class="product-details">
+                    <h3>Automatic Needle Loom</h3>
+                    <p class="product-description">
+                        Next-generation automatic needle loom with advanced features for maximum productivity and reliability.
+                    </p>
+                    <ul class="product-specs">
+                        <li><strong>Construction:</strong> Steel Body</li>
+                        <li><strong>Efficiency:</strong> High Performance</li>
+                        <li><strong>Design:</strong> Durable & Robust</li>
+                        <li><strong>Performance:</strong> Reliable & Stable</li>
+                        <li><strong>Technology:</strong> Modern Control System</li>
+                    </ul>
+                    <button class="product-btn">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== CONTACT SECTION ==================== -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">We're here to help and answer any questions you might have</p>
+        </div>
+
+        <!-- Quick Contact Info -->
+        <div class="contact-info">
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <h3>Phone</h3>
+                <p><a href="tel:7016522044">7016522044</a></p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email</h3>
+                <p><a href="mailto:info@jptools.co.in">info@jptools.co.in</a></p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Locations</h3>
+                <p>Ahmedabad & Bhavnagar, Gujarat</p>
+            </div>
+        </div>
+
+        <!-- Office Locations -->
+        <div style="margin-top: var(--spacing-2xl);">
+            <h2 style="text-align: center; color: var(--primary-blue); margin-bottom: var(--spacing-2xl);">
+                Our Office Locations
+            </h2>
+            <div class="address-section">
+                <div class="address-card">
+                    <div class="address-header">
+                        <i class="fas fa-building"></i>
+                        <h3>Main Branch</h3>
+                    </div>
+                    <p class="address-text">
+                        <strong>Ahmedabad, Gujarat</strong><br>
+                        Plot No. 27, Mahadev Estate,<br>
+                        Near GIDC Naroda, Naroda,<br>
+                        Ahmedabad - 382330, India
+                    </p>
+                    <div class="address-features">
+                        <span><i class="fas fa-check"></i> Head Office</span>
+                        <span><i class="fas fa-check"></i> Showroom</span>
+                        <span><i class="fas fa-check"></i> Service Center</span>
+                    </div>
+                </div>
+
+                <div class="address-card">
+                    <div class="address-header">
+                        <i class="fas fa-store"></i>
+                        <h3>Client Office</h3>
+                    </div>
+                    <p class="address-text">
+                        <strong>Bhavnagar, Gujarat</strong><br>
+                        Shop No. 12, 1st Floor,<br>
+                        GIDC, Chita, Kothariya Main Road,<br>
+                        Bhavnagar - 364001, India
+                    </p>
+                    <div class="address-features">
+                        <span><i class="fas fa-check"></i> Regional Office</span>
+                        <span><i class="fas fa-check"></i> Sales Center</span>
+                        <span><i class="fas fa-check"></i> Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Company Info -->
+            <div class="footer-section">
+                <h4><i class="fas fa-info-circle"></i> About Company</h4>
+                <p>
+                    JP Tools And Machine is a leading manufacturer and supplier of industrial textile machinery 
+                    with 25+ years of experience in the industry.
+                </p>
+                <p><strong>Quality • Reliability • Performance</strong></p>
+            </div>
+
+            <!-- Products -->
+            <div class="footer-section">
+                <h4><i class="fas fa-boxes"></i> Products</h4>
+                <ul>
+                    <li><a href="#products"><i class="fas fa-arrow-right"></i> Needle Loom Machines</a></li>
+                    <li><a href="#products"><i class="fas fa-arrow-right"></i> Rapier Loom Machines</a></li>
+                    <li><a href="#products"><i class="fas fa-arrow-right"></i> Automatic Looms</a></li>
+                    <li><a href="#products"><i class="fas fa-arrow-right"></i> Textile Accessories</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4><i class="fas fa-link"></i> Quick Links</h4>
+                <ul>
+                    <li><a href="#about"><i class="fas fa-arrow-right"></i> About Us</a></li>
+                    <li><a href="#products"><i class="fas fa-arrow-right"></i> Our Products</a></li>
+                    <li><a href="#contact"><i class="fas fa-arrow-right"></i> Contact Us</a></li>
+                    <li><a href="mailto:info@jptools.co.in"><i class="fas fa-arrow-right"></i> Email Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section">
+                <h4><i class="fas fa-phone"></i> Contact Us</h4>
+                <p>
+                    <strong>Phone:</strong><br>
+                    <a href="tel:7016522044">7016522044</a>
+                </p>
+                <p>
+                    <strong>Email:</strong><br>
+                    <a href="mailto:info@jptools.co.in">info@jptools.co.in</a>
+                </p>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 JP Tools And Machine. All Rights Reserved.</p>
+            <p>Made with <i class="fas fa-heart"></i> for Industrial Excellence</p>
+        </div>
+    </div>
 </footer>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
 
 </body>
 </html>
