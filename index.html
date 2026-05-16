@@ -20,9 +20,81 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo-section" onclick="scrollToTop()">
-                <div class="logo-icon">
-                    <i class="fas fa-cogs"></i>
-                </div>
+                <svg class="logo-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background Circle -->
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#0052CC;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#FF6B35;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="logoGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#0066FF;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#FF8C42;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    
+                    <!-- Outer Circle -->
+                    <circle cx="100" cy="100" r="95" fill="url(#logoGradient)" opacity="0.95"/>
+                    <circle cx="100" cy="100" r="95" fill="none" stroke="url(#logoGradient2)" stroke-width="2" opacity="0.5"/>
+                    
+                    <!-- Gear Left -->
+                    <g transform="translate(60, 100)">
+                        <circle cx="0" cy="0" r="18" fill="white" opacity="0.9"/>
+                        <!-- Gear Teeth -->
+                        <rect x="-3" y="-25" width="6" height="8" fill="white" opacity="0.9"/>
+                        <rect x="-3" y="17" width="6" height="8" fill="white" opacity="0.9"/>
+                        <g transform="rotate(45)">
+                            <rect x="-3" y="-25" width="6" height="8" fill="white" opacity="0.8"/>
+                            <rect x="-3" y="17" width="6" height="8" fill="white" opacity="0.8"/>
+                        </g>
+                        <g transform="rotate(90)">
+                            <rect x="-3" y="-25" width="6" height="8" fill="white" opacity="0.8"/>
+                            <rect x="-3" y="17" width="6" height="8" fill="white" opacity="0.8"/>
+                        </g>
+                        <g transform="rotate(135)">
+                            <rect x="-3" y="-25" width="6" height="8" fill="white" opacity="0.8"/>
+                            <rect x="-3" y="17" width="6" height="8" fill="white" opacity="0.8"/>
+                        </g>
+                        <!-- Inner Circle -->
+                        <circle cx="0" cy="0" r="12" fill="url(#logoGradient2)" opacity="0.8"/>
+                    </g>
+                    
+                    <!-- Gear Right -->
+                    <g transform="translate(140, 100)">
+                        <circle cx="0" cy="0" r="18" fill="white" opacity="0.9"/>
+                        <!-- Gear Teeth -->
+                        <rect x="-3" y="-25" width="6" height="8" fill="white" opacity="0.9"/>
+                        <rect x="-3" y="17" width="6" height="8" fill="white" opacity="0.9"/>
+                        <g transform="rotate(45)">
+                            <rect x="-3" y="-25" width="6" height="8" fill="white" opacity="0.8"/>
+                            <rect x="-3" y="17" width="6" height="8" fill="white" opacity="0.8"/>
+                        </g>
+                        <g transform="rotate(90)">
+                            <rect x="-3" y="-25" width="6" height="8" fill="white" opacity="0.8"/>
+                            <rect x="-3" y="17" width="6" height="8" fill="white" opacity="0.8"/>
+                        </g>
+                        <g transform="rotate(135)">
+                            <rect x="-3" y="-25" width="6" height="8" fill="white" opacity="0.8"/>
+                            <rect x="-3" y="17" width="6" height="8" fill="white" opacity="0.8"/>
+                        </g>
+                        <!-- Inner Circle -->
+                        <circle cx="0" cy="0" r="12" fill="url(#logoGradient2)" opacity="0.8"/>
+                    </g>
+                    
+                    <!-- Center Loom/Machine Symbol -->
+                    <g transform="translate(100, 100)">
+                        <!-- Vertical Lines (Warp) -->
+                        <line x1="-8" y1="-15" x2="-8" y2="15" stroke="white" stroke-width="2" opacity="0.9"/>
+                        <line x1="0" y1="-15" x2="0" y2="15" stroke="white" stroke-width="2" opacity="0.9"/>
+                        <line x1="8" y1="-15" x2="8" y2="15" stroke="white" stroke-width="2" opacity="0.9"/>
+                        
+                        <!-- Horizontal Lines (Weft) -->
+                        <line x1="-10" y1="-8" x2="10" y2="-8" stroke="url(#logoGradient2)" stroke-width="1.5" opacity="0.8"/>
+                        <line x1="-10" y1="0" x2="10" y2="0" stroke="url(#logoGradient2)" stroke-width="1.5" opacity="0.8"/>
+                        <line x1="-10" y1="8" x2="10" y2="8" stroke="url(#logoGradient2)" stroke-width="1.5" opacity="0.8"/>
+                    </g>
+                </svg>
+                
                 <div class="logo-text">
                     <h1>JP TOOLS</h1>
                     <p>Industrial Solutions</p>
